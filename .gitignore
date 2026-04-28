@@ -1,0 +1,40 @@
+# AI Agent 工作目录（本地会话状态，不入库）
+.opencode/
+.sisyphus/
+.claude/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encstore
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.orig
+.cursor/
+
+# 构建 / 临时产物
+*.tmp
+*.bak
+extracted_notion_content.md
+EXECUTION_SUMMARY.md
