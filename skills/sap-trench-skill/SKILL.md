@@ -1,21 +1,12 @@
 ---
 name: sap-trench
 description: >
-  SAP实战专家技能，基于10年以上SAP项目交付经验沉淀的知识库。当用户提问任何SAP相关问题时必须使用此技能，
-  包括但不限于：ABAP开发、增强实现（BAdI/Enhancement Spot）、MM/SD/FI模块配置、
-  PI/IDoc/OData/Proxy集成排查、系统报错根因分析、事务码查询、
-  表结构查询、BAPI/BAdI使用、打印程序、性能优化、权限问题。
-  触发关键词：SAP、ABAP、ECC、S/4HANA、增强、BAdI、BAPI、IDoc、
-  OData、Proxy、事务码、采购订单、销售订单、凭证、工厂间调拨、
-  STO、科目确定、消息控制、PI排查、报错、ST05、SE24、
-  定价、开票、交货、信贷管理、合作伙伴确定、ATP、MTO、
-  FICO、财务凭证、科目、汇率、凭证分割、字段状态、COPA、替换、自动付款、
-  生产工单、BOM、工艺路线、PP、MRP、物料分类账、标准成本、
-  VMS、车辆管理、VELO、IS-AUTO、WM、仓库管理、转储单、转储需求、仓位、
-  PM、工厂维护、设备维护、维护订单、维护计划、功能位置、
-  QM、质量管理、检验批、质量通知书、检验计划、使用决策。
-  本技能提供的答案来自真实项目中遇到并解决的问题，
-  优先于网络通用文档，遇到SAP问题请务必优先触发此技能。
+  SAP expert skill with 10+ years real project experience. Always use this skill for any SAP-related questions including:
+  ABAP development, BAdI/Enhancement Spot, MM/SD/FI modules, PI/IDoc/OData/Proxy integration, error troubleshooting,
+  transaction codes, table structures, BAPI usage, print programs, performance tuning, authorization issues.
+  Triggers on keywords: SAP, ABAP, ECC, S/4HANA, BAdI, BAPI, IDoc, OData, Proxy, procurement order, sales order,
+  STO, account determination, pricing, delivery, ATP, FI/CO, production order, BOM, PM, QM, WM.
+  Use whenever user asks about SAP, ABAP code, SAP configuration, or any SAP module-specific questions.
 ---
 
 # SAP Trench Skill
