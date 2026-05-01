@@ -1,18 +1,22 @@
 ---
 name: sap-trench
 description: >
-  SAP expert skill with 10+ years real project experience. Always use this skill for any SAP-related questions including:
-  ABAP development, BAdI/Enhancement Spot, MM/SD/FI modules, PI/IDoc/OData/Proxy integration, error troubleshooting,
-  transaction codes, table structures, BAPI usage, print programs, performance tuning, authorization issues.
-  Triggers on keywords: SAP, ABAP, ECC, S/4HANA, BAdI, BAPI, IDoc, OData, Proxy, procurement order, sales order,
-  STO, account determination, pricing, delivery, ATP, FI/CO, production order, BOM, PM, QM, WM.
-  Use whenever user asks about SAP, ABAP code, SAP configuration, or any SAP module-specific questions.
+  SAP expert skill with 10+ years real project experience. ALWAYS use this skill for ANY SAP-related question —
+  even if the user only mentions a transaction code, table name, module abbreviation, or vague error message.
+  Covers: ABAP development, BAdI/Enhancement Spot, user exits, MM/SD/FI/CO/PP/WM/PM/QM modules,
+  PI/IDoc/OData/Proxy/CPI integration, SmartForms/SAPscript print programs, authorization/AUTHORITY-CHECK,
+  performance tuning (ST05/SM50/SM66), and root-cause troubleshooting of real project errors.
+  Trigger keywords: SAP, ABAP, ECC, S/4HANA, BAdI, BAPI, IDoc, OData, Proxy, STO, ME21N, MIGO, VA01, VL01N,
+  FB01, CO01, LT01, IW31, QA01, SmartForms, NACE, SU53, AUTHORITY-CHECK, account determination, pricing procedure,
+  delivery, ATP, MRP, BOM, production order, goods receipt, goods issue, WM transfer order, maintenance order,
+  inspection lot, vehicle management, VELO, IS-AUTO, PI channel, Proxy class, error 51, dump analysis.
+  Use this skill whenever the user mentions anything SAP-related — do not skip it for "simple" SAP questions.
 ---
 
 # SAP Trench Skill
 
-本技能是 Shrek Zhang（10年+ ABAP/集成/MM/SD/FI经验）的项目实战知识库，
-基于真实项目问题-排查-解决的完整记录，专注于那些文档上找不到、靠踩坑才知道的细节。
+十余年 SAP 项目笔记的蒸馏沉淀，整合实战记录与问题排查中的资料整理，
+专注于标准文档之外的实战细节。
 
 ## 使用方式
 
@@ -52,13 +56,19 @@ description: >
 
 ## 核心能力范围
 
-- **ABAP开发**：语法、性能优化、Enhancement Spot、BAdI实现、Class/Interface
-- **集成技术**：PI/PO通道排查、IDoc处理流、Proxy开发、OData服务调试
+- **ABAP开发**：语法、性能优化、Enhancement Spot、BAdI实现、Class/Interface、User Exit、SMOD/CMOD
+- **集成技术**：PI/PO通道排查、IDoc处理流、Proxy开发、OData服务调试、CPI/云集成
 - **MM模块**：采购订单、库存管理、工厂间调拨（STO）、科目自动确定、消息控制
 - **SD模块**：销售订单/交货/定价/开票/合作伙伴确定/信贷管理/ATP/MTO变式配置
 - **FI/CO模块**：凭证过账增强、汇率确定、凭证分割、字段状态、COPA派生、替换、自动付款
-- **PP模块**：生产订单创建、BOM配置、ATP可用性检查、MTO可配置BOM
-- **调试排查**：ST05 SQL追踪、SM50/SM66进程监控、SXI_MONITOR、/IWFND/GW_CLIENT
+- **PP模块**：生产订单创建、BOM配置、ATP可用性检查、MRP运行、MTO可配置BOM
+- **WM模块**：仓库管理、转储单/转储需求、仓位管理、盘点流程
+- **PM模块**：工厂维护、设备/功能位置、维护订单/维护计划、序列号管理
+- **QM模块**：质量管理、检验批、使用决策、质量通知书、检验计划
+- **VMS模块**：IS-AUTO VELO 车辆管理对象、IDoc增强、SPRO配置
+- **权限管理**：AUTHORITY-CHECK 编码、角色设计、SU53 权限诊断、权限对象
+- **打印技术**：SmartForms 设计与调试、SAPscript、NACE 消息控制、输出类型
+- **调试排查**：ST05 SQL追踪、SM50/SM66进程监控、SXI_MONITOR、/IWFND/GW_CLIENT、DUMP分析
 
 ## 知识质量标准
 

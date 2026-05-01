@@ -10,7 +10,7 @@
 
 这些年笔记工具换了一轮又一轮：最早用 **Mybase** 做树形笔记，后来迁到 **OneNote**，再后来系统化整理进 **Notion**。每次迁移都是一次沉淀，但笔记终究只是静态的文档，对着 AI 对话窗口它们帮不上忙。
 
-现在 AI Coding Agent 已经成为日常工具。与其让十年的积累继续躺在 Notion 里，不如把它重新组织成 AI 智能体能直接加载、索引、引用的 **SKILL** 格式——让每一条踩坑记录都能在下一次对话里及时被召唤出来，也分享给同样在 SAP 战壕里作业的同行。
+现在 AI Coding Agent 已经成为日常工具。与其让这些积累继续躺在 Notion 里，不如把它重新组织成 AI 智能体能直接加载、索引、引用的 **SKILL** 格式——让每一条记录都能在下一次对话里及时被召唤出来，也分享给同样在 SAP 战壕里作业的同行。
 
 这就是 **SAP Trench Skill** 的来历。"Trench"（战壕），因为 SAP 项目就是这样——你在现场，问题不等人，靠的是积累，不是运气。
 
@@ -53,30 +53,17 @@
 
 ## 安装与使用
 
-### 方式一：直接使用 `.skill` 包（推荐）
-
 ```bash
-# 将 sap-trench-skill.skill 安装到 oh-my-opencode skills 目录
-cp sap-trench-skill.skill ~/.opencode/skills/
+# 克隆本仓库，将 skills/sap-trench-skill/ 整个目录放到你的 skills 目录下
+git clone https://github.com/your-username/sap-trench-skill.git
+cp -r sap-trench-skill/skills/sap-trench-skill ~/.agents/skills/
 ```
 
 oh-my-opencode 会在对话启动时自动发现并加载此技能。
 
-### 方式二：手动部署目录
-
-```bash
-# 克隆本仓库，将 skills/sap-trench-skill/ 整个目录放到你的 skills 目录下
-git clone https://github.com/your-username/sap-trench-skill.git
-cp -r sap-trench-skill/skills/sap-trench-skill ~/.opencode/skills/
-```
-
 ### 触发方式
 
-在 AI 对话中提问任何 SAP 相关问题时，技能会自动触发。也可以显式引用：
-
-```
-@sap-trench [你的问题]
-```
+在 AI 对话中提问任何 SAP 相关问题时，技能会自动触发，无需手动调用。
 
 典型触发场景：
 - "MIGO 过账时报错 Serial number already exists 怎么解决？"
@@ -90,13 +77,13 @@ cp -r sap-trench-skill/skills/sap-trench-skill ~/.opencode/skills/
 
 ```
 sap-trench-skill/
-├── sap-trench-skill.skill        # 可直接安装的技能包（zip 格式）
 └── skills/
     └── sap-trench-skill/
         ├── SKILL.md              # 技能触发层（路由表 + 关键词）
         ├── CONTRIBUTING.md       # 贡献指南
         └── references/           # 14 个知识文件
             ├── abap.md
+            ├── auth.md
             ├── fico.md
             ├── integration.md
             ├── mm.md

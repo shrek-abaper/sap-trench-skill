@@ -40,12 +40,24 @@
 
 ```
 references/
-├── mm.md         ← MM 模块配置和开发
-├── sd.md         ← SD 模块配置和开发
-├── fico.md       ← FI/CO 模块配置和开发
-├── btp.md        ← BTP / CPI / 云集成（待建）
-├── rap.md        ← RAP / Fiori Elements（待建）
-└── print.md      ← 打印程序（SmartForms / Adobe Forms）（待建）
+├── abap.md           ← ABAP 开发：语法、增强、BAdI、性能优化
+├── auth.md           ← 权限管理：AUTHORITY-CHECK、角色、SU53
+├── fico.md           ← FI/CO 模块：凭证、科目、COPA、汇率
+├── integration.md    ← 系统集成：PI/PO、IDoc、Proxy、OData
+├── mm.md             ← MM 模块：采购、库存、STO、科目确定
+├── pm.md             ← PM 模块：工厂维护、设备、维护订单
+├── pp.md             ← PP 模块：生产订单、BOM、MRP、ATP
+├── print.md          ← 打印技术：SmartForms、SAPscript、NACE
+├── qm.md             ← QM 模块：检验批、使用决策、质量通知书
+├── reference-tables.md  ← 全模块 T-code / 关键表 / BAPI 索引
+├── sd.md             ← SD 模块：销售订单、定价、交货、开票
+├── troubleshooting.md   ← 排查案例库（CASE-NNN 格式）
+├── vms.md            ← VMS 模块：IS-AUTO VELO、IDoc 增强
+├── wm.md             ← WM 模块：仓库管理、转储单、盘点
+│
+│   # 以下为待建扩展方向，欢迎贡献：
+├── btp.md            ← BTP / CPI / 云集成（待建）
+└── rap.md            ← RAP / Fiori Elements（待建）
 ```
 
 新建文件后，在 `SKILL.md` 的路由表中添加对应行。

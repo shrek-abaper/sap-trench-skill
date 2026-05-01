@@ -144,6 +144,8 @@ CALL METHOD lo_proxy-><method_name>
 ## 七、JSON 与 XML 处理
 
 ### JSON 处理（/ui2/cl_json）
+
+#### 基本用法
 ```abap
 " JSON → ABAP结构（反序列化）
 /ui2/cl_json=>deserialize(
@@ -160,6 +162,34 @@ lr_data = /ui2/cl_json=>generate( json = lv_json ).
 ASSIGN lr_data->* TO <data>.
 ASSIGN COMPONENT 'RESPONSE' OF STRUCTURE <data> TO <field>.
 ```
+
+#### 节点名称映射（支持中文/转换大小写）
+```abap
+" NAME_MAPPINGS 参数：ABAP字段名 <-> JSON节点名映射表
+DATA: lt_mappings TYPE /ui2/cl_json=>name_mappings,
+      lv_json     TYPE string.
+
+" 定义映射：abap = ABAP字段名，json = JSON中的节点名（支持中文/任意字符）
+lt_mappings = VALUE #(
+  ( abap = 'NAME'  json = '姓名' )
+  ( abap = 'AGE'   json = '年龄' )
+  ( abap = 'PHONE' json = '电话' )
+).
+
+" 反序列化：JSON → ABAP（带节点名映射）
+/ui2/cl_json=>deserialize(
+  EXPORTING json          = lv_json
+            name_mappings = lt_mappings
+  CHANGING  data         = ls_result ).
+
+" 序列化：ABAP → JSON（带节点名映射）
+lv_json = /ui2/cl_json=>serialize(
+  data          = ls_data
+  name_mappings = lt_mappings
+).
+```
+
+> **重要**：`NAME_MAPPINGS` 是解决中文节点名称的原生方法，无需预处理JSON或使用动态结构
 
 ### XML ↔ 内表转换
 - SAP默认最外层节点：`<DATA></DATA>`
