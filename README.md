@@ -1,6 +1,6 @@
-# SAP Trench Skill
+# SAP Functional Skill
 
-> 一位 SAP 顾问十余年实战笔记，蒸馏为可被 AI 智能体直接复用的知识技能包。
+> SAP 业务领域 AI Skill 集合——十余年实战笔记，蒸馏为可被 AI 智能体直接复用的知识技能包。
 
 ---
 
@@ -12,13 +12,13 @@
 
 现在 AI Coding Agent 已经成为日常工具。与其让这些积累继续躺在 Notion 里，不如把它重新组织成 AI 智能体能直接加载、索引、引用的 **SKILL** 格式——让每一条记录都能在下一次对话里及时被召唤出来，也分享给同样在 SAP 战壕里作业的同行。
 
-这就是 **SAP Trench Skill** 的来历。"Trench"（战壕），因为 SAP 项目就是这样——你在现场，问题不等人，靠的是积累，不是运气。
+这就是 **SAP Functional Skill** 的起点。从最初记录 SAP 战壕里的第一手经验（[sap-trench-skill](skills/sap-trench-skill/)），到逐步扩展为覆盖 SAP 各业务领域的 Skill 集合。
 
 ---
 
 ## 项目简介
 
-`sap-trench-skill` 是一个遵循标准 **SKILL 规范**的 AI 技能包，适用于所有支持 SKILL 格式的 AI 智能体（包括 OpenCode、Claude Code 及其他兼容框架）。内容涵盖 SAP ECC / S/4HANA 各核心模块的：
+`sap-functional-skill` 是一个遵循标准 **SKILL 规范**的 SAP 业务领域 AI 技能包集合，适用于所有支持 SKILL 格式的 AI 智能体（包括 OpenCode、Claude Code 及其他兼容框架）。
 
 - 实战事务码速查
 - 真实排查案例（现象 → 根因 → 解决方案 → 经验总结）
@@ -54,9 +54,9 @@
 ## 安装与使用
 
 ```bash
-# 克隆本仓库，将 skills/sap-trench-skill/ 整个目录放到你的 skills 目录下
-git clone https://github.com/your-username/sap-trench-skill.git
-cp -r sap-trench-skill/skills/sap-trench-skill ~/.agents/skills/
+# 克隆本仓库，将需要的 skill 目录放到你的 skills 目录下
+git clone https://github.com/shrek-abaper/sap-functional-skill.git
+cp -r sap-functional-skill/skills/sap-trench-skill ~/.agents/skills/
 ```
 
 oh-my-opencode 会在对话启动时自动发现并加载此技能。
@@ -76,9 +76,9 @@ oh-my-opencode 会在对话启动时自动发现并加载此技能。
 ## 项目结构
 
 ```
-sap-trench-skill/
+sap-functional-skill/
 └── skills/
-    └── sap-trench-skill/
+    └── sap-trench-skill/     # SAP 实战排查 Skill（首个）
         ├── SKILL.md              # 技能触发层（路由表 + 关键词）
         ├── CONTRIBUTING.md       # 贡献指南
         └── references/           # 14 个知识文件

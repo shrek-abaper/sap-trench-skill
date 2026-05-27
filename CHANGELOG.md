@@ -27,4 +27,4 @@
 
 **技能包**
 
-- `sap-trench-skill.skill` — 可直接安装的 SKILL 分发包（zip 格式，16 文件）
+  - `sap-trench-skill` — SAP 实战排查 Skill（首个 skill，位于 `skills/sap-trench-skill/`）
