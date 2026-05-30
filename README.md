@@ -1,118 +1,185 @@
 # SAP Functional Skill
 
-> SAP 业务领域 AI Skill 集合——十余年实战笔记，蒸馏为可被 AI 智能体直接复用的知识技能包。
+> A collection of SAP business-domain AI skills — a decade of field notes distilled into reusable knowledge and execution packages for AI agents.
+
+[中文版](README.zh-CN.md)
 
 ---
 
-## 项目背景
+## Background
 
-做 SAP 顾问这些年，真正有价值的经验往往散落在项目现场的每一次排查过程中——那些在标准文档之外、只有亲历才能积累的判断与洞察。
+Years of SAP consulting work leaves behind something valuable: the hard-won judgment that accumulates from actual incidents on the ground — insights that live outside the standard documentation and only come from being there.
 
-这些年笔记工具换了一轮又一轮：最早用 **Mybase** 做树形笔记，后来迁到 **OneNote**，再后来系统化整理进 **Notion**。每次迁移都是一次沉淀，但笔记终究只是静态的文档，对着 AI 对话窗口它们帮不上忙。
+Those notes have migrated through tools over the years: **Mybase** tree notes, then **OneNote**, then a more structured **Notion** workspace. Each migration was a refinement. But static documents don't help when you're mid-conversation with an AI agent.
 
-现在 AI Coding Agent 已经成为日常工具。与其让这些积累继续躺在 Notion 里，不如把它重新组织成 AI 智能体能直接加载、索引、引用的 **SKILL** 格式——让每一条记录都能在下一次对话里及时被召唤出来，也分享给同样在 SAP 战壕里作业的同行。
+Now that AI coding agents are a daily tool, it makes more sense to restructure this accumulated knowledge into the **SKILL format** — so every record can be loaded, indexed, and referenced at the right moment in the next conversation, and shared with others working in the same SAP trenches.
 
-这就是 **SAP Functional Skill** 的起点。从最初记录 SAP 战壕里的第一手经验（[sap-trench-skill](skills/sap-trench-skill/)），到逐步扩展为覆盖 SAP 各业务领域的 Skill 集合。
-
----
-
-## 项目简介
-
-`sap-functional-skill` 是一个遵循标准 **SKILL 规范**的 SAP 业务领域 AI 技能包集合，适用于所有支持 SKILL 格式的 AI 智能体（包括 OpenCode、Claude Code 及其他兼容框架）。
-
-- 实战事务码速查
-- 真实排查案例（现象 → 根因 → 解决方案 → 经验总结）
-- 关键数据表 & BAPI 参考
-- 模块配置路径与常见坑
-- ABAP 增强、集成技术（PI/IDoc/OData）实操记录
-
-所有内容来自真实项目交付，**不是对 SAP Help 的二次搬运**。
+That's the origin of **SAP Functional Skill**: starting from first-hand SAP field experience ([sap-trench-skill](skills/sap-trench-skill/)), and expanding into a growing collection of skills covering SAP business domains.
 
 ---
 
-## 覆盖模块
+## What's Inside
 
-| 模块 | 文件 | 内容重点 |
+`sap-functional-skill` is a collection of SAP business-domain AI skill packages following the standard **SKILL specification**, compatible with any AI agent framework that supports the format (including OpenCode, Claude Code, and oh-my-opencode).
+
+The collection currently contains two skills of different types:
+
+| Skill | Type | Description |
 |---|---|---|
-| ABAP 开发 | `references/abap.md` | 语法、性能优化、BAdI/Enhancement Spot、调试工具 |
-| MM 采购与库存 | `references/mm.md` | 采购订单、STO 工厂间调拨、科目确定、消息控制 |
-| SD 销售与分销 | `references/sd.md` | 销售订单、定价、交货、开票、信贷管理、ATP/MTO |
-| FI/CO 财务 | `references/fico.md` | 凭证过账、汇率、凭证分割、COPA、替换、自动付款 |
-| PP 生产计划 | `references/pp.md` | 生产订单、BOM、工艺路线、MRP、可配置 BOM |
-| WM 仓库管理 | `references/wm.md` | 转储单、转储需求、仓位管理、盘点 |
-| PM 工厂维护 | `references/pm.md` | 设备、功能位置、维护订单、维护计划、序列号 |
-| QM 质量管理 | `references/qm.md` | 检验批、使用决策、质量通知书、检验计划 |
-| VMS 车辆管理 | `references/vms.md` | IS-AUTO VELO 对象、IDoc 增强、SPRO 配置 |
-| 系统集成 | `references/integration.md` | PI/PO、IDoc、Proxy、OData、XML/JSON 排查 |
-| 权限管理 | `references/auth.md` | AUTHORITY-CHECK、角色、SU53、权限对象 |
-| 打印技术 | `references/print.md` | SmartForms、SAPscript、NACE 消息控制 |
-| 事务码速查 | `references/reference-tables.md` | 全模块 T-code、关键表、BAPI 索引 |
-| 排查案例库 | `references/troubleshooting.md` | CASE-001 ~ CASE-015，完整根因分析 |
+| [`sap-trench-skill`](skills/sap-trench-skill/) | Knowledge | Passive — auto-triggers on any SAP question. 14 reference files covering all major modules. |
+| [`sap-sto-create`](skills/sap-sto-create/) | Execution | Active — creates STO transfer orders via S/4HANA OData API. Python + Java/JCo. |
 
 ---
 
-## 安装与使用
+## sap-trench-skill
+
+A reference knowledge base distilled from real SAP project delivery across all major modules. Auto-triggers in AI conversation whenever an SAP topic is detected — no manual invocation required.
+
+### Coverage
+
+| Module | File | Focus |
+|---|---|---|
+| ABAP Development | `references/abap.md` | Syntax, performance tuning, BAdI/Enhancement Spot, debug tools |
+| MM (Procurement & Inventory) | `references/mm.md` | Purchase orders, STO plant-to-plant transfer, account determination, message control |
+| SD (Sales & Distribution) | `references/sd.md` | Sales orders, pricing, delivery, billing, credit management, ATP/MTO |
+| FI/CO (Finance) | `references/fico.md` | Document posting, exchange rates, document splitting, COPA, substitution, auto payment |
+| PP (Production Planning) | `references/pp.md` | Production orders, BOM, routing, MRP, configurable BOM |
+| WM (Warehouse Management) | `references/wm.md` | Transfer orders, transfer requirements, bin management, physical inventory |
+| PM (Plant Maintenance) | `references/pm.md` | Equipment, functional location, maintenance orders, maintenance plans, serial numbers |
+| QM (Quality Management) | `references/qm.md` | Inspection lots, usage decisions, quality notifications, inspection plans |
+| VMS (Vehicle Management) | `references/vms.md` | IS-AUTO VELO objects, IDoc enhancements, SPRO configuration |
+| System Integration | `references/integration.md` | PI/PO, IDoc, Proxy, OData, XML/JSON troubleshooting |
+| Authorization | `references/auth.md` | AUTHORITY-CHECK, roles, SU53, authorization objects |
+| Print | `references/print.md` | SmartForms, SAPscript, NACE message control |
+| T-code Reference | `references/reference-tables.md` | Full-module T-code, key table, BAPI index |
+| Troubleshooting Case Library | `references/troubleshooting.md` | CASE-001 ~ CASE-015, complete root-cause analysis |
+
+### Typical Trigger Examples
+
+- *"MIGO posting fails with 'Serial number already exists' — how to fix?"*
+- *"PR00 condition type missing in SD pricing procedure — root cause?"*
+- *"IDoc status 51 troubleshooting flow"*
+- *"ABAP BAdI implementation steps"*
+
+---
+
+## sap-sto-create
+
+An execution skill that creates STO (Stock Transfer Order) transfer orders in S/4HANA via the standard OData service `API_PURCHASEORDER_PROCESS_SRV`. When the issuing plant is an after-sales plant, it automatically attempts to create an outbound delivery via SAP JCo (`BAPI_OUTB_DELIVERY_CREATE_STO`).
+
+**Key design**: enforces a mandatory two-step gate — `preview` (dry run) before `create` — to prevent accidental order creation.
+
+### Tech Stack
+
+- **Python** — CLI entry point and OData orchestration
+- **Java / SAP JCo** — outbound delivery creation via RFC/BAPI
+- **S/4HANA OData** — `API_PURCHASEORDER_PROCESS_SRV`
+
+### Quick Start
 
 ```bash
-# 克隆本仓库，将需要的 skill 目录放到你的 skills 目录下
-git clone https://github.com/shrek-abaper/sap-functional-skill.git
-cp -r sap-functional-skill/skills/sap-trench-skill ~/.agents/skills/
+# List available plant combinations
+python3 scripts/sap_sto_cli.py plants
+
+# Preview (dry run — always run this first)
+python3 scripts/sap_sto_cli.py preview \
+  --supply-plant P002 \
+  --receiving-plant A002 \
+  --material MAT-001:3 \
+  --delivery-date 2026-05-30 \
+  --batch-number BATCH001
+
+# Create (requires --confirmed safety flag)
+python3 scripts/sap_sto_cli.py create \
+  --supply-plant P002 \
+  --receiving-plant A002 \
+  --material MAT-001:3 \
+  --delivery-date 2026-05-30 \
+  --batch-number BATCH001 \
+  --confirmed
 ```
 
-oh-my-opencode 会在对话启动时自动发现并加载此技能。
-
-### 触发方式
-
-在 AI 对话中提问任何 SAP 相关问题时，技能会自动触发，无需手动调用。
-
-典型触发场景：
-- "MIGO 过账时报错 Serial number already exists 怎么解决？"
-- "SD 定价过程中 PR00 条件类型找不到，根因是什么？"
-- "IDoc 状态 51 排查思路"
-- "ABAP BAdI 实现步骤"
+See [`skills/sap-sto-create/README.md`](skills/sap-sto-create/README.md) for full setup, environment configuration, and JCo library placement.
 
 ---
 
-## 项目结构
+## Installation
+
+```bash
+git clone https://github.com/shrek-abaper/sap-functional-skill.git
+
+# Install the knowledge skill
+cp -r sap-functional-skill/skills/sap-trench-skill ~/.agents/skills/
+
+# Install the execution skill
+cp -r sap-functional-skill/skills/sap-sto-create ~/.agents/skills/
+```
+
+oh-my-opencode discovers and loads skills automatically at conversation startup.
+
+---
+
+## Project Structure
 
 ```
 sap-functional-skill/
 └── skills/
-    └── sap-trench-skill/     # SAP 实战排查 Skill（首个）
-        ├── SKILL.md              # 技能触发层（路由表 + 关键词）
-        ├── CONTRIBUTING.md       # 贡献指南
-        └── references/           # 14 个知识文件
-            ├── abap.md
-            ├── auth.md
-            ├── fico.md
-            ├── integration.md
-            ├── mm.md
-            ├── pm.md
-            ├── pp.md
-            ├── print.md
-            ├── qm.md
-            ├── reference-tables.md
-            ├── sd.md
-            ├── troubleshooting.md
-            ├── vms.md
-            └── wm.md
+    ├── sap-trench-skill/          # Knowledge skill — SAP field troubleshooting
+    │   ├── SKILL.md               # Trigger layer (routing table + keywords)
+    │   ├── README.md
+    │   ├── CONTRIBUTING.md
+    │   ├── evals/
+    │   │   └── golden-set.yaml    # 7 Q&A eval cases
+    │   └── references/            # 14 knowledge files
+    │       ├── abap.md
+    │       ├── auth.md
+    │       ├── fico.md
+    │       ├── integration.md
+    │       ├── mm.md
+    │       ├── pm.md
+    │       ├── pp.md
+    │       ├── print.md
+    │       ├── qm.md
+    │       ├── reference-tables.md
+    │       ├── sd.md
+    │       ├── troubleshooting.md
+    │       ├── vms.md
+    │       └── wm.md
+    └── sap-sto-create/            # Execution skill — STO order creation via OData
+        ├── SKILL.md               # Trigger layer + tool routing
+        ├── README.md
+        ├── .env.example           # Environment config template
+        ├── evals/
+        │   └── evals.json
+        └── scripts/
+            ├── sap_sto_cli.py     # CLI entry point
+            ├── requirements.txt
+            └── lib/
+                ├── create_sto_odata.py   # Core OData logic
+                └── java/
+                    ├── SapDeliveryCreator.java
+                    ├── sapjco3.jar
+                    └── lib/              # Platform-specific JCo native libs
+                        ├── linux/
+                        ├── macos/
+                        └── windows/
 ```
 
 ---
 
-## 贡献
+## Contributing
 
-欢迎提交你自己踩过的 SAP 坑。贡献规范见 [CONTRIBUTING.md](skills/sap-trench-skill/CONTRIBUTING.md)。
+Contributions of real SAP field experience are welcome. See [CONTRIBUTING.md](skills/sap-trench-skill/CONTRIBUTING.md) for the knowledge card format.
 
-每条知识卡片遵循统一结构：**现象 → 根本原因 → 解决方案 → 经验总结**，确保 AI 能准确理解和引用。
+Every knowledge card follows a fixed structure: **Phenomenon → Root Cause → Solution → Experience Summary** — ensuring AI agents can accurately parse and reference the content.
 
 ---
 
-## 适用平台
+## Compatible Platforms
 
-本技能遵循标准 SKILL 规范，凡是支持该规范的 AI 智能体均可直接加载使用：
+Both skills follow the standard SKILL specification and are compatible with any supporting framework:
 
-- 任何支持 SKILL 格式的 AI Agent 框架（原生兼容）
+- Any AI agent framework that supports the SKILL format (native)
 - [OpenCode](https://github.com/opencode-ai/opencode)
 - [oh-my-opencode](https://github.com/oh-my-opencode/oh-my-opencode)
 
@@ -120,4 +187,4 @@ sap-functional-skill/
 
 ## License
 
-MIT — 知识应该流动，不应该沉睡。
+MIT — Knowledge should flow, not sleep.
