@@ -1,0 +1,54 @@
+- question: "MIGO 过账时报错 'Serial number already exists'，怎么解决？"
+  expected_contains:
+    - "序列号"
+    - "重复"
+  expected_skill_used: true
+  tags: [mm, troubleshooting]
+
+- question: "SD 定价过程中 PR00 条件类型找不到，根因是什么？"
+  expected_contains:
+    - "条件类型"
+    - "定价"
+    - "访问顺序"
+  expected_skill_used: true
+  tags: [sd, pricing]
+
+- question: "IDoc 状态 51 的排查思路是什么？"
+  expected_contains:
+    - "状态 51"
+    - "错误"
+    - "SXI_MONITOR"
+  expected_skill_used: true
+  tags: [integration, idoc]
+
+- question: "ABAP 里如何用 BAdI 实现增强？给我完整步骤。"
+  expected_contains:
+    - "SE18"
+    - "SE19"
+    - "实现类"
+  expected_skill_used: true
+  tags: [abap, badi]
+
+- question: "STO 工厂间调拨的科目确定配置在哪里？"
+  expected_contains:
+    - "科目确定"
+    - "OMJJ"
+    - "移动类型"
+  expected_skill_used: true
+  tags: [mm, sto]
+
+- question: "AUTHORITY-CHECK 报权限不足，SU53 看不到对象，怎么诊断？"
+  expected_contains:
+    - "SU53"
+    - "权限对象"
+    - "AUTHORITY-CHECK"
+  expected_skill_used: true
+  tags: [auth]
+
+- question: "SmartForms 打印预览正常但实际输出空白，什么原因？"
+  expected_contains:
+    - "SmartForms"
+    - "输出类型"
+    - "NACE"
+  expected_skill_used: true
+  tags: [print, smartforms]

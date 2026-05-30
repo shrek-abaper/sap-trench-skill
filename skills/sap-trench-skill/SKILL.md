@@ -1,8 +1,8 @@
 ---
 name: sap-trench
-description: >
-  SAP expert skill with 10+ years real project experience. ALWAYS use this skill for ANY SAP-related question —
-  even if the user only mentions a transaction code, table name, module abbreviation, or vague error message.
+description: |
+  Use this skill whenever the user asks about any SAP topic — even a single transaction code, table name, module
+  abbreviation, or vague error message is sufficient to trigger it. Do not skip it for "simple" SAP questions.
   Covers: ABAP development, BAdI/Enhancement Spot, user exits, MM/SD/FI/CO/PP/WM/PM/QM modules,
   PI/IDoc/OData/Proxy/CPI integration, SmartForms/SAPscript print programs, authorization/AUTHORITY-CHECK,
   performance tuning (ST05/SM50/SM66), and root-cause troubleshooting of real project errors.
@@ -10,7 +10,16 @@ description: >
   FB01, CO01, LT01, IW31, QA01, SmartForms, NACE, SU53, AUTHORITY-CHECK, account determination, pricing procedure,
   delivery, ATP, MRP, BOM, production order, goods receipt, goods issue, WM transfer order, maintenance order,
   inspection lot, vehicle management, VELO, IS-AUTO, PI channel, Proxy class, error 51, dump analysis.
-  Use this skill whenever the user mentions anything SAP-related — do not skip it for "simple" SAP questions.
+  Do NOT use for: non-SAP ERP systems (Oracle EBS, Dynamics), generic SQL or database questions unrelated to SAP tables.
+license: MIT
+allowed-tools: [Read]
+metadata:
+  version: "1.0.0"
+  type: docs
+  valid_until: "evergreen"
+  source_urls:
+    - "https://help.sap.com"
+    - "https://community.sap.com"
 ---
 
 # SAP Trench Skill
