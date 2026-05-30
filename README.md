@@ -2,7 +2,7 @@
 
 > A collection of SAP business-domain AI skills — a decade of field notes distilled into reusable knowledge and execution packages for AI agents.
 
-[中文版](README.zh-CN.md)
+[English](README.md) | [中文](README.zh-CN.md)
 
 ---
 

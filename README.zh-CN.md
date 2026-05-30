@@ -2,7 +2,7 @@
 
 > SAP 业务领域 AI Skill 集合——十余年实战笔记，蒸馏为可被 AI 智能体直接复用的知识与执行技能包。
 
-[English](README.md)
+[English](README.md) | [中文](README.zh-CN.md)
 
 ---
 
