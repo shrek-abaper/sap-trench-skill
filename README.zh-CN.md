@@ -20,7 +20,7 @@
 
 ## 项目简介
 
-`sap-functional-skill` 是一个遵循标准 **SKILL 规范**的 SAP 业务领域 AI 技能包集合，适用于所有支持 SKILL 格式的 AI 智能体（包括 OpenCode、Claude Code 及 oh-my-opencode）。
+`sap-functional-skill` 是一个遵循标准 **SKILL 规范**的 SAP 业务领域 AI 技能包集合，适用于所有支持 SKILL 格式的 AI 智能体（包括 Claude Code、OpenCode 及其他兼容框架）。
 
 目前包含两个不同类型的 Skill：
 
@@ -115,7 +115,7 @@ cp -r sap-functional-skill/skills/sap-trench-skill ~/.agents/skills/
 cp -r sap-functional-skill/skills/sap-sto-create ~/.agents/skills/
 ```
 
-oh-my-opencode 会在对话启动时自动发现并加载已安装的技能。
+Claude Code 会在对话启动时自动发现并加载已安装的技能。
 
 ---
 
@@ -179,9 +179,9 @@ sap-functional-skill/
 
 所有技能遵循标准 SKILL 规范，凡是支持该规范的 AI 智能体均可直接加载使用：
 
-- 任何支持 SKILL 格式的 AI Agent 框架（原生兼容）
+- [Claude Code](https://claude.ai/code)
 - [OpenCode](https://github.com/opencode-ai/opencode)
-- [oh-my-opencode](https://github.com/oh-my-opencode/oh-my-opencode)
+- [oh-my-opencode](https://github.com/oh-my-opencode/oh-my-opencode)（插件）
 
 ---
 

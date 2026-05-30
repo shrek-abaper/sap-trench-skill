@@ -20,7 +20,7 @@ That's the origin of **SAP Functional Skill**: starting from first-hand SAP fiel
 
 ## What's Inside
 
-`sap-functional-skill` is a collection of SAP business-domain AI skill packages following the standard **SKILL specification**, compatible with any AI agent framework that supports the format (including OpenCode, Claude Code, and oh-my-opencode).
+`sap-functional-skill` is a collection of SAP business-domain AI skill packages following the standard **SKILL specification**, compatible with any AI agent framework that supports the format (including Claude Code, OpenCode, and other compatible frameworks).
 
 The collection currently contains two skills of different types:
 
@@ -115,7 +115,7 @@ cp -r sap-functional-skill/skills/sap-trench-skill ~/.agents/skills/
 cp -r sap-functional-skill/skills/sap-sto-create ~/.agents/skills/
 ```
 
-oh-my-opencode discovers and loads skills automatically at conversation startup.
+Claude Code discovers and loads skills automatically at conversation startup.
 
 ---
 
@@ -179,9 +179,9 @@ Every knowledge card follows a fixed structure: **Phenomenon → Root Cause → 
 
 Both skills follow the standard SKILL specification and are compatible with any supporting framework:
 
-- Any AI agent framework that supports the SKILL format (native)
+- [Claude Code](https://claude.ai/code)
 - [OpenCode](https://github.com/opencode-ai/opencode)
-- [oh-my-opencode](https://github.com/oh-my-opencode/oh-my-opencode)
+- [oh-my-opencode](https://github.com/oh-my-opencode/oh-my-opencode) (plugin)
 
 ---
 
