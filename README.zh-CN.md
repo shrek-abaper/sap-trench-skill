@@ -181,7 +181,6 @@ sap-functional-skill/
 
 - [Claude Code](https://claude.ai/code)
 - [OpenCode](https://github.com/opencode-ai/opencode)
-- [oh-my-opencode](https://github.com/oh-my-opencode/oh-my-opencode)（插件）
 
 ---
 

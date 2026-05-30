@@ -181,7 +181,6 @@ Both skills follow the standard SKILL specification and are compatible with any 
 
 - [Claude Code](https://claude.ai/code)
 - [OpenCode](https://github.com/opencode-ai/opencode)
-- [oh-my-opencode](https://github.com/oh-my-opencode/oh-my-opencode) (plugin)
 
 ---
 
